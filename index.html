@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Gify</title>
+</head>
+
+<body>
+<div id="buttonarea"></div>
+
+ <form>
+  <div>
+    <h3>Search Term</h3>
+    <input type="text" value="" id="searchTerm">
+  </div>
+  <!-- <div>
+  <h3>Rating</h3>
+   <input type="radio" name="rating" value="g" checked> G<br>
+  <input type="radio" name="rating" value="pg"> PG<br>
+  <input type="radio" name="rating" value="pg-13"> PG-13<br>
+  <input type="radio" name="rating" value="r"> R<br>
+ </div>
+  <div>
+  <h3>Return</h3>
+   <input type="radio" name="return" value="1" checked> 1<br>
+  <input type="radio" name="return" value="10"> 10<br>
+  <input type="radio" name="return" value="50"> 50<br>
+  <input type="radio" name="return" value="100"> 100<br>
+ </div>
+ <div> -->
+ <button id="searchSubmit">SUBMIT</button>
+</div>
+<div>
+ <button id="reset">RESET</button>
+ <div id="gifs-appear-here"></div>
+ </div>
+  
+  </form>
+
+
+
+  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript">
+// var url;
+   
+    // $("#searchSubmit").on("click", function() { 
+      // event.preventDefault();
+      // var search = $("#searchTerm").val();
+      // console.log(search);
+      // var ratingSelect = $('input[name="rating"]:checked').val();
+      // console.log(ratingSelect);
+      // var limitSelect = $('input[name="return"]:checked').val();
+      // console.log(limitSelect);
+      // console.log("click");
+      // var url = "http://api.giphy.com/v1/gifs/search";
+     // url += '?' + $.param({
+       // 'q': search,
+       // 'rating': ratingSelect,
+       // 'limit': limitSelect,
+       // 'api_key': "dc6zaTOxFJmzC",
+      // console.log(search); 
+      // topics.push(search); 
+      // console.log(topics);
+      // $("#buttonarea").html("");
+      // populate();
+  
+       // }); 
+     // console.log(url);
+
+          // $.ajax({
+    // url: url,
+    // method: "GET",
+
+  // }).done(function(results) {
+    // console.log(results);
+    // console.log(results.data[0]);
+    // console.log(results.data[0].images.original_still.url);
+    // console.log(results.data[0].rating);
+
+
+  // });
+
+     
+      // });
+
+ 
+
+     // $.ajax({
+      // url: url,
+      // method: 'GET',
+   // })
+     // .done(function(result) {
+       // console.log(result);
+      // console.log(result.response.docs[0].headline.main);
+      // console.log(result.response.docs[0].section_name);
+      // console.log(result.response.docs[0].pub_date);
+      // console.log(result.response.docs[0].web_url);
+
+
+
+      // for (var i = 0; i < result.response.docs[numberRecords]; i++) {
+        // var headline = result.response.docs[i].headline.main;
+        // var sectionName = result.response.docs[i].section_name;
+        // var pubDate = result.response.docs[i].pub_date;
+        // var webUrl = result.response.docs[i].web_url;
+
+        // $("#topArticle").html('<p id="#headline">' + headline + '</p>' +
+          // '<p id="#section-name">' + sectionName + '</p>'+
+           // '<p id="#pub-date">' + pubDate + '</p>' +
+           // '<p id="web-url">' + webUrl + '</p>' );
+
+       // };
+     // });
+    // .fail(function(err) {
+      // throw err;
+    // });
+
+  </script>
+
+    <script type="text/javascript" src="assets/javascript/topics.js"></script>
+    <script type="text/javascript" src="assets/javascript/code.js"></script> 
+</body>
