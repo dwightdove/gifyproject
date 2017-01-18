@@ -11,8 +11,34 @@ var topicsButton = $('<button/>').text(original.topics[i]).attr("class", "popula
 populate();
 
 
+// Will populate and ADD BUTTONS BUT CANT CALL THE IMAGES
+// $("#searchTopicSubmit").on("click", function () {
+  // console.log("working");
+  // event.preventDefault();
+  // var search = $("#searchTopic").val();
+  // console.log(search);
+       // var ratingSelect = $('input[name="rating"]:checked').val();
+       // console.log(ratingSelect);
+       // var limitSelect = $('input[name="return"]:checked').val();
+       // console.log(limitSelect);
+       // console.log("click");
+       // var url = "http://api.giphy.com/v1/gifs/search";
+      // url += '?' + $.param({
+        // 'q': search,
+        // 'rating': ratingSelect,
+        // 'limit': limitSelect,
+        // 'api_key': "dc6zaTOxFJmzC",
+       // console.log("search: " + search); 
+       // original.topics.push(search); 
+       // console.log("topics: " + original.topics);
+       // $("#createdButtons").empty();
+       // populate();
+   
+        // });
+
+
 // Event Listener for click event
-$(".populated").on("click", function() {
+var addgifs = $(".populated").on("click", function() {
     	console.log("working");
       // In this case, the "this" keyword refers to the button that was clicked
       var person = $(this).text();
