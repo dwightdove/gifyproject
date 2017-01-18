@@ -1,12 +1,20 @@
-var topics = [];
+// Create object to hold array
+var original = {};
+// Create array
+original.topics = [];
+//  Fill array
+original.topics[0] = "Eddie Murphy";
+original.topics[1] = "Dane Cook";
+original.topics[2] = "Dave Chappelle";
+original.topics[3] = "Aziz Ansari";
+original.topics[4] = "Louis CK";
+original.topics[5] = "Richard Pryor";
+original.topics[6] = "Sarah Silverman";
+original.topics[7] = "George Carlin";
+original.topics[8] = "Chris Rock";
+original.topics[9] = "Kevin Hart";
 
-topics[0] = "Eddie Murphy";
-topics[1] = "Dane Cook";
-topics[2] = "Dave Chappelle";
-topics[3] = "Kevin Hart";
-topics[4] = "Louis CK";
-topics[5] = "Richard Pryor";
-topics[6] = "Aziz Ansari";
-topics[7] = "Sarah Silverman";
-topics[8] = "George Carlin";
-topics[9] = "Chris Rock";
+// Check Object Format
+console.log(original);
+// Check Array Format
+console.log(original.topics);
