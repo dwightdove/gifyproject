@@ -12,40 +12,44 @@ populate();
 
 
 // Will populate and ADD BUTTONS BUT CANT CALL THE IMAGES
-// $("#searchTopicSubmit").on("click", function () {
-  // console.log("working");
-  // event.preventDefault();
-  // var search = $("#searchTopic").val();
+ $("#searchTopicSubmit").on("click", function () {
+   console.log("working");
+  event.preventDefault();
+  var search = $("#searchTopic").val();
   // console.log(search);
        // var ratingSelect = $('input[name="rating"]:checked').val();
        // console.log(ratingSelect);
        // var limitSelect = $('input[name="return"]:checked').val();
        // console.log(limitSelect);
        // console.log("click");
-       // var url = "http://api.giphy.com/v1/gifs/search";
+        // var url = "https://api.giphy.com/v1/gifs/search";
       // url += '?' + $.param({
-        // 'q': search,
+         // 'q': search,
         // 'rating': ratingSelect,
         // 'limit': limitSelect,
-        // 'api_key': "dc6zaTOxFJmzC",
-       // console.log("search: " + search); 
-       // original.topics.push(search); 
-       // console.log("topics: " + original.topics);
-       // $("#createdButtons").empty();
-       // populate();
+         // 'api_key': "dc6zaTOxFJmzC";
+          console.log("search: " + search); 
+          original.topics.push(search); 
+          console.log("topics: " + original.topics);
+          $("#createdButtons").empty();
+          populate();
+          addgifs();
+          
+          
    
-        // });
+        });
 
 
 // Event Listener for click event
-var addgifs = $(".populated").on("click", function() {
+var addgifs = function() {
+        $(".populated").on("click", function() {
     	console.log("working");
       // In this case, the "this" keyword refers to the button that was clicked
       var person = $(this).text();
       console.log("this: " + person);
 
       // Constructing a URL to search Giphy for the name of the person who said the quote
-      var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+      var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
         person + "&api_key=dc6zaTOxFJmzC&limit=10";
         console.log("URL: " + queryURL);
 
@@ -104,6 +108,9 @@ var addgifs = $(".populated").on("click", function() {
           }
         });
     });
+  };      
+
+  addgifs();
 
 $( "div" ).on( "click", ".gif", function() {
   console.log("working");
