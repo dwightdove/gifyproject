@@ -1,11 +1,11 @@
 // create buttons for topics and populte the web page
 var populate = function () {
-	for(var i = 0; i < original.topics.length; i++){
-	console.log(original.topics[i]); 
-var topicsButton = $('<button/>').text(original.topics[i]).attr("class", "populated btn btn-primary btn-lg");
-    $("#createdButtons").prepend(topicsButton);
+  	for(var i = 0; i < original.topics.length; i++){
+      console.log(original.topics[i]); 
+      var topicsButton = $('<button/>').text(original.topics[i]).attr("class", "populated btn btn-primary btn-lg");
+      $("#createdButtons").prepend(topicsButton);
 
-}
+  }
 };
 
 populate();
@@ -34,10 +34,7 @@ populate();
           $("#createdButtons").empty();
           populate();
           addgifs();
-          
-          
-   
-        });
+  });
 
 
 // Event Listener for click event
